@@ -28,7 +28,7 @@ operations = {
 while True:
     print("\n--- CALCULATOR NOU ---")
     try:
-        x = float(input("Introdu primul număr: "))
+        x = float(input("Introdu primul numar: "))
     except ValueError:
         print("introdu un numar!")
         continue

@@ -25,13 +25,14 @@ operations = {
 
 # rezultat = operations['*'](4, 8)
 
-while True:
+def calculator():
     print("\n--- CALCULATOR NOU ---")
     try:
         x = float(input("Introdu primul numar: "))
     except ValueError:
         print("introdu un numar!")
-        continue
+        calculator()
+
     print("'+'  '-'  '*'  '/'  '**'  'sqrt'  '%'  'log' sau 'reset'")
 
 
@@ -61,4 +62,8 @@ while True:
 
         print(rezultat)
         x = rezultat
+
+    calculator()
+
+calculator()
 
